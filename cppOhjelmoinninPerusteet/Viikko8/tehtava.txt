@@ -1,0 +1,10 @@
+1. Ohjelman modularisointi on sitä kun jaetaan ohjelma moneen
+pienempään palaseen, moduuleihin. Tällä varmistetaan esimerkiksi 
+se että ohjelmaan ei tarvitse kirjoittaa samaa pätkää moneen kertaan
+ja täten myös helpotetaan mainin luettavuutta.
+
+2. Funktion esittelyssä kerrotaan kääntäjälle että on olemassa 
+funktio x jossain ja että se palauttaa muuttujan tyypiltä y. Jos palauttaa.
+
+3. Funktion toteutus on se missä varsinaisesti funktiolle annetaan
+jonkinlaista sisältöä mitä se ajaisi.

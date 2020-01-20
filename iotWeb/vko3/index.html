@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kertolaskuja</title>
+        <style>
+           h1 {
+               padding: 5px;
+               margin-top: 10px;
+           }
+           
+           p {
+               margin:10px;
+           }
+           label {
+                margin:10px;
+           }
+           
+            body {
+                color: #8B45f3;
+                font-family: verdana;
+                font-size: 18px;           
+            }           
+            button {
+                color: #8Bf513;    
+                font-family: verdana;
+                font-size: 14px;
+                margin:5px;
+        }
+       </style>
+        <script>
+            console.log("kertolaskuja?");
+            
+            function laskut(){
+                const a1=Math.floor(Math.random() * 11);
+                const b1=Math.floor(Math.random() * 11);
+
+                for(let i = 1; i <= 3; i++){
+                    siivoa();
+                    let a = Math.floor(Math.random() * 11);
+                    let b = Math.floor(Math.random() * 11);
+                    document.getElementById(`lasku${i}`).innerHTML = `${a} x ${b}`;
+                    document.getElementById(`vastaus${i}`).value = a * b;
+                }
+            }
+
+            function siivoa(){
+                for(let i = 1; i <= 3; i++){
+                    document.getElementById(`palaute${i}`).innerHTML = "";
+                    document.getElementById(`vastaus${i}`).value = "";
+                }
+                document.getElementById(`loppuPalaute`).innerHTML = "";
+            }
+
+          /* function tarkista(){
+                let oikein = 0;
+                for (let i = 1; i <= 3; i++){
+                    let vastaus = document.getElementById(`vastaus${i}`).value;
+                    let tulo = document.getElementById(`tulo${i}`).value;
+                    if(vastaus == tulo){
+                        oikein++;
+                       document.getElementById(`palaute${i}`).innerHTML=":)";
+                    }
+                    else{
+                        document.getElementById(`palaute${i}`).innerHTML="kys";
+                    }
+                }
+                document.getElementById(`palaute`).innerHTML = `Sait ${oikein} / 3 oikein`;
+            }*/
+            function tarkista() {
+                let oikein=0;
+                for (let i=1; i<=3; i++) {
+                    let vastaus = document.getElementById(`vastaus${i}`).value;
+                    let tulo = document.getElementById(`tulo${i}`).value;
+                    if (vastaus == tulo) {
+                        oikein++;
+                        document.getElementById(`palaute${i}`).innerHTML=";-)";
+                    }
+                    else {
+                        document.getElementById(`palaute${i}`).innerHTML=":-(";
+                    }
+                }
+                document.getElementById("palaute").innerHTML = `Sait ${oikein} / 3 oikein!`;
+            }
+
+
+
+        </script>
+    </head>
+    <body>
+        <h1>Opi poju laskuja</h1>
+        <p>Laske laske:</p>
+        <p><label id="lasku1">1 x 3</label><input id="vastaus1" type="text"><label id="palaute1">;)</label><input id="tulo1" type="hidden"></p>
+        <p><label id="lasku2">1 x 3</label><input id="vastaus2" type="text"><label id="palaute2">;)</label><input id="tulo2" type="hidden"></p>
+        <p><label id="lasku3">1 x 3</label><input id="vastaus3" type="text"><label id="palaute3">;)</label><input id="tulo3" type="hidden"></p>
+        <p><label id=palaute> Sait 6/09</label></p>
+        <p><button onclick="tarkista()">Tarkista</button><button onclick="laskut()">Uudelleen</button></p>
+        <script>laskut();</script>
+    </body>
+</html>
