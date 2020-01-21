@@ -39,45 +39,47 @@ int main(){
 
 
 bool isTriangular(int side[], triangle type){
-    switch(type) {
-        case isoscelesTriangle : {
-            if(side[0] == side[1] || side[1] == side[2] || side[2] == side[0]){
-                return true;
-            }
-            else{
-                return false;
-            }
-            break;
-        }//isoscelesTriangle
-        case rightTriangle : {
-        float c2;
-        c2 = pow(side[0], 2) + pow(side[1], 2);
-        
-            if(c2 = side[2]){
-                return true;
-            }
-            else{
-                return false;
-            }
-            break;
-        }//rightTriangle
-        case equilateralTriangle : {
-            if(side[0] == side[1] && side[1] == side[2]){
-                return true;
-            }
-            else{
-                return false;
-            }
-            break;
-        }//equilateralTriangle
-        case scaleneTriangle : {
-            if(side[0] != side[1] && side[1] != side[2] && side[2] != side[0]){
-                return true;
-            }
-            else{
-                return false;
-            }
-            break;
-        }//scaleneTriangle
-    }//switch 
+    if(side[0] != 0 && side[1] != 0 && side[2] != 0){    
+        switch(type) {
+            case isoscelesTriangle : {
+                if(side[0] == side[1] || side[1] == side[2] || side[2] == side[0]){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+                break;
+            }//isoscelesTriangle
+            case rightTriangle : {
+            float c2;
+            c2 = pow(side[0], 2) + pow(side[1], 2);
+            
+                if(c2 = side[2]){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+                break;
+            }//rightTriangle
+            case equilateralTriangle : {
+                if(side[0] == side[1] && side[1] == side[2]){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+                break;
+            }//equilateralTriangle
+            case scaleneTriangle : {
+                if(side[0] != side[1] && side[1] != side[2] && side[2] != side[0]){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+                break;
+            }//scaleneTriangle
+        }//switch
+    }//if0 
 }//isTriangular
