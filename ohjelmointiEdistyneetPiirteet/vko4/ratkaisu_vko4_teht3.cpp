@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string.h>
 #define day 24 //in hours
 #define hour 60 //in minutes
 #define minute 60 //in seconds
