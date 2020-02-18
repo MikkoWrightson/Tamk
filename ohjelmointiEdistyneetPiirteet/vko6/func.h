@@ -6,3 +6,4 @@ void lueRivi(int rivi[]);
 int lisaNro();
 int valikko();
 void riviTulostus(int rivi[], int plusNro);
+void waitForEnter();
