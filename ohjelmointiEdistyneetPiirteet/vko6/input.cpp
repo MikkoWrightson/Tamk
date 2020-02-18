@@ -1,9 +1,5 @@
 #include "func.h"
 #include <iostream>
-//#include <limits>
-
-using namespace std;
-
 
 void lueRivi(int rivi[]){
     std::cout << "Anna lottonumerot: ";

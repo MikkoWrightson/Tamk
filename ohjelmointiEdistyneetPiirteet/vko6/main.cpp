@@ -3,16 +3,18 @@
 
 
 int main (){
-    int rivi[maxNrot],
+    int inputRivi[maxNrot],
+        arvottuRivi[maxNrot],
         plusNro,
         whatDo = 420;
 
 
     do{
     whatDo = valikko();
-    lueRivi(rivi);
+    lueRivi(inputRivi);
     plusNro = lisaNro();
-    riviTulostus(rivi, plusNro);
+    riviTulostus(inputRivi, plusNro);
+    rivinArvonta(arvottuRivi);
 
 
 
