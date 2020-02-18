@@ -18,6 +18,7 @@ int lisaNro(){
     int plusNro;
     std::cout << "Anna plusnumero: ";
     std::cin >> plusNro;
+    std::cin.ignore();
     return plusNro;
 }
 
@@ -36,11 +37,11 @@ void riviTulostus(int rivi[], int plusNro){
     }
     std::cout << " ja plusnumero: " << plusNro;
     std::cout << "\n\tPaina ENTER jatkaaksesi ...";
-    
+    std::cin.get();
 
-  std::cout << "Press Enter to Continue" << std::endl;
-  std::cin.sync();
-  std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+  //std::cout << "Press Enter to Continue" << std::endl;
+  //std::cin.sync();
+  //std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
 
     
     /*
