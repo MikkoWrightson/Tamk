@@ -12,8 +12,8 @@ void waitForEnter();
 
 
 
+//analyysi.cpp
+int analyysi(int inputRivi[], int arvottuRivi[]);
 
 //arvonta.cpp
-//int analyysi(int inputRivi[], int arvottuRivi[], int oikein);
-//void rivinArvonta(int arvottuRivi[]);
 void rivinArvonta(int arvottuRivi[]);

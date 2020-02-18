@@ -11,11 +11,11 @@ int main (){
 
     do{
     whatDo = valikko();
-    //lueRivi(inputRivi);
-    //plusNro = lisaNro();
-    //riviTulostus(inputRivi, plusNro);
+    lueRivi(inputRivi);
+    plusNro = lisaNro();
+    riviTulostus(inputRivi, plusNro);
     rivinArvonta(arvottuRivi);
-
+    std::cout << analyysi(inputRivi, arvottuRivi) << std::endl;
 
 
     }while(whatDo !=2);
