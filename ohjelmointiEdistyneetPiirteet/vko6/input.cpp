@@ -26,7 +26,7 @@ int valikko(){
 
 void riviTulostus(int rivi[], int plusNro){
     char temp;
-    std::cout << "Käyttäjän rivi on:\n\tNumerot:";
+    std::cout << "Rivi on:\n\tNumerot:";
     for (int i = 0; i < maxRivi; i++){
         std::cout << " " << rivi[i];
     }

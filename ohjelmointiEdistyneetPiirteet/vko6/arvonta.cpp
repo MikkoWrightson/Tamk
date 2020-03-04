@@ -1,6 +1,5 @@
 #include "func.h"
 #include <iostream>
-#include <tgmath.h>// for pow
 #include <stdlib.h>
 #include <time.h>// for seeding srand
 #include <algorithm> //for std::find

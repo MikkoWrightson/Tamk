@@ -1,6 +1,7 @@
 #include "func.h"
 #include <iostream>
-
+#include <time.h>
+#include <stdlib.h>
 
 
 int main (){
@@ -8,14 +9,17 @@ int main (){
         arvottuRivi[maxRivi],
         plusNro,
         whatDo = 420;
+    
+    srand(time(NULL));
 
     do{
     whatDo = valikko();
     lueRivi(inputRivi);
     plusNro = lisaNro();
     riviTulostus(inputRivi, plusNro);
+    riviTulostus(arvottuRivi, plusNro);
     rivinArvonta(arvottuRivi);
-    std::cout << analyysi(inputRivi, arvottuRivi) << std::endl;
+    std::cout << "Analyysi: " << analyysi(inputRivi, arvottuRivi) << std::endl;
 
 
     }while(whatDo !=2);
