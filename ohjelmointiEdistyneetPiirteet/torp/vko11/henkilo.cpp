@@ -13,7 +13,8 @@ using namespace std;
     }
 
     henkilo::henkilo(){
-
+        nimi = "error";
+        ika = 0;
     }
     void henkilo::setNimi (string uusiNimi){
         nimi = uusiNimi;

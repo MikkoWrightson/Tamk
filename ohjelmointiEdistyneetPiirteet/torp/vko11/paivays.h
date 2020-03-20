@@ -14,6 +14,9 @@
 
 class paivays{
 public:
+    paivays();
+    ~paivays();
+    paivays(int paivaIn, int kuukausiIn, int vuosiIn);
     void setPaiva(int paivaInput);
     void setKuukausi(int kkInput);
     void setVuosi(int vuosiInput);

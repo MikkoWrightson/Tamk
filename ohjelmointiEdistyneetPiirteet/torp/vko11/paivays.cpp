@@ -2,6 +2,22 @@
 #include <iostream>
 #define piste << "." <<
 
+paivays::~paivays(){
+    
+}
+
+paivays::paivays(int paivaIn, int kuukausiIn, int vuosiIn){
+    setVuosi(vuosiIn);
+    setKuukausi(kuukausiIn);
+    setPaiva(paivaIn);
+    
+}
+
+
+paivays::paivays(){
+
+}
+
 void paivays::setPaiva(int paivaInput){
     if(paivaInput > 0){
         switch (kuukausi){
