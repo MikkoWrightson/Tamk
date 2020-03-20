@@ -1,5 +1,6 @@
 #include "murtoluku.h"
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 murtoluku::murtoluku(){
@@ -35,5 +36,15 @@ void murtoluku::tulosta(){
     cout << osoittaja << "/" << nimittaja;
 }
 void murtoluku::sievenna(){
-
+    int gcd;
+    gcd = __gcd(osoittaja, nimittaja);
+    nimittaja = nimittaja / gcd;
+    osoittaja = osoittaja / gcd;
+    //cout << gcd << endl;
+   //if (osoittaja == 0){
+    //nimittaja = nimittaja;
+   //}else{
+   //    nimittaja = nimittaja % osoittaja;
+   //    sievenna();
+   //}
 }

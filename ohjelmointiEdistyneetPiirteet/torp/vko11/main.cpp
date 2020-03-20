@@ -7,7 +7,7 @@
 void functionForStuff();
 
 int main(){
-
+/*
     henkilo henkilot[10];
     henkilot[1].setNimi("pete");
     henkilot[1].setIka(2);
@@ -39,6 +39,14 @@ int main(){
     }
 
     functionForStuff();
+*/
+
+    //sievennyssettii
+    murtoluku mur;
+    mur.kysyTiedot();
+    mur.sievenna();
+    mur.tulosta();
+
 
     return 0;
 }
