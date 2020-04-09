@@ -2,10 +2,11 @@
 #include <iostream>
 #define piste << "." <<
 
-paivays::~paivays(){
-    paiva = 0;
-    kuukausi = 0;
-    vuosi = 0;
+
+paivays::paivays(){
+
+}
+paivays::paivays(const paivays& aPaivays) : paiva(aPaivays.paiva), kuukausi(aPaivays.kuukausi), vuosi(aPaivays.vuosi){
 
 }
 
@@ -16,10 +17,13 @@ paivays::paivays(int paivaIn, int kuukausiIn, int vuosiIn){
     
 }
 
-
-paivays::paivays(){
+paivays::~paivays(){
+    paiva = 0;
+    kuukausi = 0;
+    vuosi = 0;
 
 }
+
 
 void paivays::setPaiva(int paivaInput){
     if(paivaInput > 0){

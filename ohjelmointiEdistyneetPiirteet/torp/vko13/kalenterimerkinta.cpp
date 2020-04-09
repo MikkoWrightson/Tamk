@@ -7,16 +7,21 @@ using namespace std;
 kalenterimerkinta::kalenterimerkinta(){
 
 }
-kalenterimerkinta::kalenterimerkinta(paivays aPvm, string aAsia, bool aMuistutus) : pvm(aPvm), asia(aAsia), muistutus(aMuistutus){
+kalenterimerkinta::kalenterimerkinta(const paivays& aPvm, const string& aAsia, bool aMuistutus) : pvm(aPvm), asia(aAsia), muistutus(aMuistutus){
 
 }
+
+kalenterimerkinta::kalenterimerkinta(const kalenterimerkinta& aKalenterimerkinta) : asia(aKalenterimerkinta.asia), muistutus(aKalenterimerkinta.muistutus){
+
+}
+
 kalenterimerkinta::~kalenterimerkinta(){
 
 }
-void kalenterimerkinta::setPVM(paivays aPvm){
+void kalenterimerkinta::setPVM(const paivays& aPvm){
     pvm = aPvm;
 }
-void kalenterimerkinta::setAsia(string aAsia){
+void kalenterimerkinta::setAsia(const string& aAsia){
     asia = aAsia;
 }
 void kalenterimerkinta::setMuistutus(bool aMuistutus){
