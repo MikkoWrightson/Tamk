@@ -15,8 +15,10 @@
 class paivays{
 public:
     paivays();
-    ~paivays();
+    paivays(const paivays& aPaivays);
     paivays(int paivaIn, int kuukausiIn, int vuosiIn);
+    ~paivays();
+
     void setPaiva(int paivaInput);
     void setKuukausi(int kkInput);
     void setVuosi(int vuosiInput);

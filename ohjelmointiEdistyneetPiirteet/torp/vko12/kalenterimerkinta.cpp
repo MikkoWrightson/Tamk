@@ -10,6 +10,11 @@ kalenterimerkinta::kalenterimerkinta(){
 kalenterimerkinta::kalenterimerkinta(paivays aPvm, string aAsia, bool aMuistutus) : pvm(aPvm), asia(aAsia), muistutus(aMuistutus){
 
 }
+
+kalenterimerkinta::kalenterimerkinta(kalenterimerkinta& aKalenterimerkinta) : asia(aKalenterimerkinta.asia), muistutus(aKalenterimerkinta.muistutus){
+
+}
+
 kalenterimerkinta::~kalenterimerkinta(){
 
 }

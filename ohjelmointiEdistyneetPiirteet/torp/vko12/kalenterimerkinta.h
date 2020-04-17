@@ -7,7 +7,9 @@ class kalenterimerkinta{
 public:
     kalenterimerkinta();
     kalenterimerkinta(paivays aPvm, string aAsia, bool aMuistutus);
+    kalenterimerkinta(const kalenterimerkinta& aKalenterimerkinta);
     ~kalenterimerkinta();
+    
     void setPVM(paivays aPvm);
     void setAsia(string aAsia);
     void setMuistutus(bool aMuistutus);
