@@ -7,10 +7,10 @@ using namespace std;
 
     }
 
-    henkilo::henkilo(string nimiIn, int ikaIn) : nimi(nimiIn), ika(ikaIn){
+    henkilo::henkilo(const string& nimiIn, int ikaIn) : nimi(nimiIn), ika(ikaIn){
 
     }
-    henkilo::henkilo(string aNimi, int aIka, osoite aOsoite) : nimi(aNimi), ika(aIka), Osoite(aOsoite){
+    henkilo::henkilo(const string& aNimi, int aIka, const osoite& aOsoite) : nimi(aNimi), ika(aIka), Osoite(aOsoite){
 
     }
 
@@ -18,7 +18,7 @@ using namespace std;
         nimi = "error";
         ika = 0;
     }
-    void henkilo::setNimi (string uusiNimi){
+    void henkilo::setNimi (const string& uusiNimi){
         nimi = uusiNimi;
     }
     string henkilo::getNimi() const{
@@ -32,7 +32,7 @@ using namespace std;
     int henkilo::getIka() const{
         return ika;
     }
-    void henkilo::setOsoite(osoite aOsoite){
+    void henkilo::setOsoite(const osoite& aOsoite){
         Osoite = aOsoite;
     }
     osoite henkilo::getOsoite() const{
